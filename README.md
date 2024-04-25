@@ -4,6 +4,33 @@ This repository is a comprehensive template for starting full-stack web developm
 
 I created this because I needed a quick way to start new projects with all the tools I use regularly. I hope you find it useful too!
 
+## New Instructions
+
+0. Install dependencies
+   ```bash
+   npm install
+   ```
+1. Visit [Clerk Dashboard](https://dashboard.clerk.com) and create an account or log in.
+2. Create a new instance for your project and obtain your Clerk Frontend API Key and Clerk Secret Key.
+3. Copy `.env.local.sample` to a new file named `.env.local` and fill in your Clerk keys:
+
+   ```plaintext
+   NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_frontend_api_key
+   CLERK_API_KEY=your_clerk_secret_key
+   ```
+
+4. navigate to JWT templates and create a new template and select convex as the provider
+5. copy the jwt issuer token and add to env.local file
+
+   ```plaintext
+   CLERK_JWT_ISSUER_DOMAIN=your_clerk_jwt_issuer_domain
+   ```
+
+6. run convex dev in a new terminal
+   ```bash
+   npx convex dev
+   ```
+
 ## How to Use the FullStackStarterKit
 
 To clone this template and start your own project, follow these instructions.
