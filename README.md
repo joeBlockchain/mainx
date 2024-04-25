@@ -1,7 +1,5 @@
 # FullStackStarterKit
 
-quick change
-
 This repository is a comprehensive template for starting full-stack web development projects, pre-configured with Next.js, Clerk, Convex, ShadcnUI, and TailwindCSS.
 
 I created this because I needed a quick way to start new projects with all the tools I use regularly. I hope you find it useful too!
