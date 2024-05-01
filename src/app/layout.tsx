@@ -33,19 +33,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Providers>
-        <body
-          className={cn(
-            "min-h-screen bg-background font-sans antialiased max-w-6xl mx-auto",
-            fontSans.variable
-          )}
-        >
-          {" "}
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased max-w-6xl mx-auto",
+          fontSans.variable
+        )}
+      >
+        <Providers>
           <NavBar currentTheme="light" />
           {children}
-        </body>
-        {/* <Footer /> */}
-      </Providers>
+        </Providers>
+      </body>
+      {/* <Footer /> */}
     </html>
   );
 }
